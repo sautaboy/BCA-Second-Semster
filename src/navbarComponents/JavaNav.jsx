@@ -1,33 +1,91 @@
-import SubNavbar from "./SubNavbar";
 
-import Class from '../contentComponents/JavaContent/Class'
-import Object from '../contentComponents/JavaContent/Object'
-import Constructor from '../contentComponents/JavaContent/Constructor'
-import Polymorphism from '../contentComponents/JavaContent/Polymorphism'
-import Inheritence from '../contentComponents/JavaContent/Inheritence'
+import Topics from "../contentComponents/JavaContent/Topics";
+
 
 export default function JavaNav() {
+    const assignmentA = "https://drive.google.com/file/d/1XDlqATDwI3LJcNwmXi7aZGWJANa1yodc/preview"
 
+    const assignmentB = "https://drive.google.com/file/d/1XDlqATDwI3LJcNwmXi7aZGWJANa1yodc/preview"
+
+    const assignmentC = "https://drive.google.com/file/d/1XDlqATDwI3LJcNwmXi7aZGWJANa1yodc/preview"
     return (
-        <>
-            <SubNavbar title1="Class" title2="Object" title3="Polymorphism" title4="Inheritence" title5="Constructor" title5Href="constructor" title1Href="class" title2Href="object" title3Href="polymorphism" title4Href="inheritence" />
+        <div id="java">
+            <Topics topicListAhref="creatingObject "
+                topicListBhref="constructor"
+                topicListChref="nestedInnerClass"
+                topicListDhref="this"
+                topicListEhref="inheritance"
+                topicListFhref="extends"
+                topicListGhref="overloading"
+                topicListHhref="overriding"
+                topicListJhref="interface"
+                topicListIhref="package"
 
-            <div id="class">
-                <Class />
-            </div>
-            <div id="object">
-                <Object />
-            </div>
-            <div id="constructor">
-                <Constructor />
-            </div>
-            <div id="inheritence">
-                <Inheritence />
-            </div>
-            <div id="polymorphism">
-                <Polymorphism />
-            </div>
 
-        </>
+                topicListA="Creating Object "
+                topicListB="Constructor"
+                topicListC="Nested and Inner Classes"
+                topicListD="This Keyword"
+                topicListE="Inheritance"
+                topicListF="Extends Keyword"
+                topicListG="Overloading"
+                topicListH="Overriding"
+                topicListI="Package"
+                topicListJ="Interface"
+
+
+
+                // Assignments Section
+
+                assignmentA={assignmentA}
+                assignmentB={assignmentB}
+                assignmentC={assignmentC}
+
+
+                // QUESTIONS Section
+
+                // Assignments One
+                questionA1="
+                Define Control Statement. Explain different types of control statements with examples.
+                "
+                questionB1="
+                Define operators. Explain the different types of operater used in java with suitable examples.
+                "
+                questionC1="
+                Define identifires. What are the different rule to declare identifiers. 
+                "
+                questionD1="
+                Different between procedure oriented vS 00P.
+                "
+                questionE1="
+                write a program in java to find the fraction of given integer. 
+                "
+
+                // Assignments Two
+                questionA2="Heloolaksnd "
+                questionB2="Heloolaksnd "
+                questionC2="Heloolaksnd "
+                questionD2="Heloolaksnd "
+                questionE2="Heloolaksnd "
+                questionF2="Heloolaksnd "
+                questionG2="Heloolaksnd "
+                questionH2="Heloolaksnd "
+                questionI2="Heloolaksnd "
+                questionJ2="Heloolaksnd "
+
+                // Assignments Thre
+                questionA3="Pending "
+                questionB3="Pending "
+                questionC3="Pending "
+                questionD3="Pending "
+                questionE3="Pending "
+                questionF3="Pending "
+                questionG3="Pending "
+                questionH3="Pending "
+                questionI3="Pending "
+                questionJ3="Pending "
+            />
+
+        </div>
     )
 }

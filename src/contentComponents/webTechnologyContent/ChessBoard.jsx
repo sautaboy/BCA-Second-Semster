@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function WbTechnologyContent() {
+export default function ChessBoard() {
     return (
-        <div className='chessBoardTable'>
+        <div  className='chessBoardTable'>
             <table >
                 <caption>
                     <span className='spanBlack'>Black</span> & <span className='spanWhite'>White</span> Chess Board

@@ -2,8 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 export default function Home() {
 
-
-
     // Ya chai maile Ramita garya xu hai kina ki yo kaam yeutai hook bata hunthyo but maiel syntax birsya huna le garina bihan garxu vanerarakhya xu XD
 
     const [firstBackgroundColor, setfirstBackgroundColor] = useState(
@@ -138,6 +136,8 @@ export default function Home() {
                     <a href="#semisterEight" onClick={clickEightSem} style={eightBackgroundColor}>Eight Semister</a>
                 </ul>
             </div>
+
+
             <div className='home'>
                 <div className="head">
                     <div className="logo">
@@ -749,6 +749,9 @@ export default function Home() {
 
 
 
+            </div>
+            <div className="goto">
+                
             </div>
         </div>
     )

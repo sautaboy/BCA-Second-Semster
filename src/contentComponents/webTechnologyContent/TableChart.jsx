@@ -14,11 +14,13 @@ export default function TableChart() {
 
             <table>
                 <caption>
-                    <h2 className='tableChartTitle'>
+                    <h3>
+
                         Heatuda City College <br />
                         HTML & CSS <br />
                         Text Result
-                    </h2>
+                    </h3>
+
                 </caption>
                 <tr rowspan="2">
                     <th rowspan="2">SN</th>
@@ -56,6 +58,8 @@ export default function TableChart() {
                     <td>65</td>
                 </tr>
             </table>
+
+
         </div >
     )
 }

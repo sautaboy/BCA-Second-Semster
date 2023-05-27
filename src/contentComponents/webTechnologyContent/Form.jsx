@@ -4,7 +4,7 @@ export default function Form() {
     return (
         <div className='form'>
             <form action="#" >
-                <h2>Submit Your Form</h2>
+                <h3>Submit Your Form</h3>
                 <fieldset className='personalDetailsFieldset'>
                     <legend>Submit Your Form</legend>
                     <label htmlFor="name">Name</label>
@@ -25,7 +25,7 @@ export default function Form() {
 
                     {/* Gender Selection works if the name of all inout is same  */}
 
-                    <label htmlFor="gender" className='genderRadio'>
+                    <label htmlFor="gender" className='genderRadio gap' >
                         <h3>Gender:</h3>
                         <li>
                             <input type="radio" name="gender" id="male" value="male" />
@@ -44,7 +44,7 @@ export default function Form() {
                     <input type="date" name="" id="" />
                 </fieldset>
 
-                <fieldset className='checkList'>
+                <fieldset className='checkList gap'>
                     <legend>Check Check</legend>
                     <li>
                         <input type="checkbox" name="checkBoxList" />
@@ -72,7 +72,7 @@ export default function Form() {
                         <label htmlFor="checkboxList">I took intrance preparation class in here HCC</label>
                     </li>
                 </fieldset>
-                <fieldset className='religionSelect'>
+                <fieldset className='religionSelectgap '>
                     <label htmlFor="religionSelect">Religion:</label>
                     <select name="religon" id="religion">
                         <option value="">Please Choose Religion</option>
@@ -84,20 +84,20 @@ export default function Form() {
                     </select>
 
                 </fieldset>
-                <fieldset className='easySectionFieldset'>
+                <fieldset className='easySectionFieldset gap'>
                     <legend>Eassy section</legend>
                     <h3>In 50 words or more explain why you want to take admission in HCC</h3>
                     <textarea name="essay" id="essay" cols="30" placeholder='enter your queries here' rows="10"></textarea>
                 </fieldset>
 
 
-                <fieldset className='contactDetailsFieldset'>
+                <fieldset className='contactDetailsFieldset gap'>
                     <h3>Please upload contact details for 2 reference</h3>
                     <textarea name="contactDetails" id="contactDetails" cols="30" rows="10" placeholder='enter here'></textarea>
                 </fieldset>
 
 
-                <fieldset className='educationCertificatesFields'>
+                <fieldset className='educationCertificatesFields gap'>
                     <label htmlFor="attachFile">Upload all the education certificates</label>
                     <input type="file" name="attachFile" id="attachFile" />
                 </fieldset>
