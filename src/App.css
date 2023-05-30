@@ -4,7 +4,27 @@
   list-style: none !important;
   text-decoration: none;
   box-sizing: border-box;
-  color: black;
+  color: white;
+}
+
+/* Hre line is here */
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(77, 69, 69);
+  border: none !important;
+}
+
+.short {
+  background-color: rgb(36, 37, 38);
+}
+
+/* H tage is here */
+h1,
+h2,
+h3,
+h4 {
+  color: white !important;
 }
 
 html {
@@ -12,152 +32,20 @@ html {
 }
 
 body {
-  background-color: cadetblue;
+  background-color: rgb(24, 25, 26);
 }
-
-a {
-  font-weight: 500;
-}
-
-a:hover {
-  color: red;
-}
-
-a:active {
-  color: hotpink;
-}
-
-h2 {
-  color: brown;
-}
-
-h3 {
-  color: rgb(43, 8, 8);
-}
-
-#home {
-  padding: 10vh 0 5vh 0;
-}
-
-.home .logo {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.homeWithSemisterList {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.homeWithSemisterList .semisterList {
-  width: 15%;
-}
-
-.homeWithSemisterList .semisterList ul {
-  display: flex;
-  flex-direction: column;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10vh;
-  gap: .5rem 0;
-}
-
-
-/* Hover Effect of table  is here */
-
-.home table td {
-  padding: 1rem;
-  text-align: center;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  gap: 1rem 0;
-}
-
-
-.home .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.home .head .title {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem 0;
-}
-
-.home .bcaInformation {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem 0;
-}
-
-.video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.home .video iframe {
-  width: 100%;
-}
-
-.home .eligibility,
-.jobProspects,
-.prospectCarrers {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem 0;
-}
-
-.home .prospectCarrers ul,
-.eligibility ul {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem 0;
-}
-
-.home .prospectCarrers ul li,
-.eligibility ul li {
-  list-style: circle;
-}
-
-.home .curicullarStructure,
-#semisterOne,
-#semisterTwo,
-#semisterThree,
-#semisterFour,
-#semisterFive,
-#semisterSix,
-#semisterSeven,
-#semisterEight {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem 0;
-  padding: 10vh 0 5vh 0;
-  /* color: rgb(10, 67, 10); */
-}
-
-
-
 /* Navbar */
 .navbarHeader {
   display: flex;
-  justify-content: space-around;
-  background: palegoldenrod;
+  justify-content: space-between;
+  padding: 0 1rem ;
+  background: rgb(36, 37, 38);
   height: 5vh;
   align-items: center;
   position: fixed;
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid rgb(77, 69, 69);
 }
 
 .navbarHeader .navList,
@@ -166,13 +54,18 @@ h3 {
   gap: 0 1rem;
 }
 
+.navbarHeader a:hover {
+  color: hotpink
+}
+
 .allTopics {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  width: 100vw;
+  justify-content: space-between;
 }
 
 /* left and Right */
+
 .allTopics .topicList ul,
 .questionSection ul {
   display: flex;
@@ -180,39 +73,82 @@ h3 {
   gap: .5rem 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 10vh;
-}
-
-.allTopics .contentSection {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem 0;
-  width: 70%;
-}
-
-.contentSectionChild {
-  padding: 10vh 0 5vh 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem 0;
+  top: 5vh;
+  background-color: rgb(24, 25, 25);
+  width: 100%;
   align-items: center;
+  /* background: #000; */
 }
 
-.contentSectionChild h2,
-h3 {
-  text-align: center;
+.allTopics .topicList ul a,
+.allTopics .questionSection ul a {
+  text-align: left;
+  padding: 1rem 0 1rem 1rem;
+  color: antiquewhite;
+  width: 100%;
+  font-weight: bolder;
 }
 
-.allTopics .questions {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem 0;
+.allTopics .topicList ul a:hover,
+.allTopics .questionSection ul a:hover {
+  color: skyblue;
+
 }
 
-.allTopics .questions ul {
+.topicList,
+.questionSection {
+  width: 20%;
+}
+
+
+/* Questoons Section */
+
+.contentSection {
+  width: 60%;
+}
+
+iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+#assignments ul li {
+  padding: 5vh 0 5vh 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: .5rem 0;
+}
+
+.assignments {
+  padding: 5vh 0 5vh 0;
+}
+
+.allTopics .matched ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem 0;
+  width: 100%;
+  align-items: center;
+  text-align: justify;
+}
+
+.allTopics .matched ul p,
+.matched ul li {
+  text-align: justify;
+  width: 80%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: gray; */
+}
+
+#questions {
+  display: flex;
+  gap: 1rem 0;
+  flex-direction: column;
+}
+
+#questions ul {
+  background: rgb(36, 37, 38);
 }
 
 
@@ -243,7 +179,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rebeccapurple; */
 }
 
 
@@ -319,16 +254,4 @@ th {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
-}
-
-/* Assignment Section */
-.assignments {
-  width: 100%;
-  height: 80vh;
-}
-
-.assignments iframe {
-  width: 80%;
-  height: 100%;
-
 }

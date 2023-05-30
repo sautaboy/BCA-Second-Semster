@@ -1,7 +1,6 @@
 
 import Topics from "../contentComponents/JavaContent/Topics";
-
-
+import Navbar from "./Navbar";
 export default function JavaNav() {
     const assignmentA = "https://drive.google.com/file/d/1XDlqATDwI3LJcNwmXi7aZGWJANa1yodc/preview"
 
@@ -10,28 +9,41 @@ export default function JavaNav() {
     const assignmentC = "https://drive.google.com/file/d/1XDlqATDwI3LJcNwmXi7aZGWJANa1yodc/preview"
     return (
         <div id="java">
-            <Topics topicListAhref="creatingObject "
-                topicListBhref="constructor"
-                topicListChref="nestedInnerClass"
-                topicListDhref="this"
-                topicListEhref="inheritance"
-                topicListFhref="extends"
-                topicListGhref="overloading"
-                topicListHhref="overriding"
-                topicListJhref="interface"
-                topicListIhref="package"
+            <Navbar
+                navListOne="Data Structure And Alogorithm"
+                navListOneHref="dataStructureAndAlogorithm"
+
+                navListTwo="Probility and Statistics" navListTwoHref="probilityAndStatistics"
+
+                navListThree="System Analysis and Design" navListThreeHref="systemAnalysisAndDesign"
+
+                navListFour="OOp in Java" navListFourHref="oopInJava"
+
+                navListFive="Web Technology" navListFiveHref="webTechnology"
+            />
+
+            <Topics topicListAhref="firstAssignment"
+                topicListBhref="secondAssignment"
+                topicListChref="thirdAssignment"
+                // topicListDhref="fourthAssignment"
+                // topicListEhref="fifthAssignment"
+                // topicListFhref="sixthAssignment"
+                // topicListGhref="seventhAssignment"
+                // topicListHhref="eightthAssignment"
+                // topicListJhref="ninethAssignment"
+                // topicListIhref="tenethAssignment"
 
 
-                topicListA="Creating Object "
-                topicListB="Constructor"
-                topicListC="Nested and Inner Classes"
-                topicListD="This Keyword"
-                topicListE="Inheritance"
-                topicListF="Extends Keyword"
-                topicListG="Overloading"
-                topicListH="Overriding"
-                topicListI="Package"
-                topicListJ="Interface"
+                topicListA="First Assignment"
+                topicListB="Second Assignment"
+                topicListC="Third Assignment"
+                // topicListD="Fourth Assignment"
+                // topicListE="Fifth Assignment"
+                // topicListF="Sixth Assignment"
+                // topicListG="Seventh Assignment"
+                // topicListH="Eightth Assignment"
+                // topicListI="Nineth Assignment"
+                // topicListJ="Teneth Assignment"
 
 
 
@@ -55,35 +67,30 @@ export default function JavaNav() {
                 Define identifires. What are the different rule to declare identifiers. 
                 "
                 questionD1="
-                Different between procedure oriented vS 00P.
+                Different between procedure oriented vs 00P.
                 "
                 questionE1="
                 write a program in java to find the fraction of given integer. 
                 "
 
                 // Assignments Two
-                questionA2="Heloolaksnd "
-                questionB2="Heloolaksnd "
-                questionC2="Heloolaksnd "
-                questionD2="Heloolaksnd "
-                questionE2="Heloolaksnd "
-                questionF2="Heloolaksnd "
-                questionG2="Heloolaksnd "
-                questionH2="Heloolaksnd "
-                questionI2="Heloolaksnd "
-                questionJ2="Heloolaksnd "
+                questionA2="Explain the features Object oriented concept in details. "
+                questionB2="Define constructors. explain the different types of constructors."
+                questionC2="Explain method Overriding in Java with proper Example."
+                questionD2="Explain the use of this keyword  with example."
+                questionE2="Explain nested classes with example."
+                questionF2="Create two time class and add,substract the time and return the time in output in time format."
 
-                // Assignments Thre
-                questionA3="Pending "
-                questionB3="Pending "
-                questionC3="Pending "
-                questionD3="Pending "
-                questionE3="Pending "
-                questionF3="Pending "
-                questionG3="Pending "
-                questionH3="Pending "
-                questionI3="Pending "
-                questionJ3="Pending "
+                // Assignments Three
+                questionA3="Explain Inheritance. Explain different types of inheritance with suitable example."
+                questionB3="Define method Overroding. Write a program to show the method overriding with correct example."
+                questionC3="Difference between Method Overloading  and method Overriding."
+                questionD3=" Why multiple inheritance is not supported by JAVA,Explain Why? How multiple inheritance is archiverd by, Explain."
+                questionE3="Define Packaging. Discuss the different techniques for accessing packages."
+                questionF3="Define Abstract Classses and method with example."
+                questionG3="Discuss the use of Final keyword with suitable example."
+                questionH3="Discuss the rule of Super keyword."
+
             />
 
         </div>
