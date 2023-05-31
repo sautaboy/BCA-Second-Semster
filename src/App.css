@@ -146,7 +146,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  background: rgb(36, 37, 38);
+  background: rgb(20, 38, 57);
   height: 5vh;
   align-items: center;
   position: fixed;
@@ -169,6 +169,11 @@ body {
   display: flex;
   width: 100vw;
   justify-content: space-between;
+}
+
+.navLogo {
+  display: flex;
+  gap: 0 1rem;
 }
 
 /* left and Right */
@@ -361,4 +366,151 @@ th {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
+}
+
+
+/* font awosome */
+.navHead {
+  display: none;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .desktopHome,
+  .desktopUser {
+    display: none;
+  }
+
+  .questionSection {
+    display: block;
+  }
+
+  .questionSection ul a {
+
+    padding: .5rem 0;
+  }
+
+  .questionSection ul a:hover {
+    color: skyblue;
+  }
+
+  .whyBcaContainer .homeContent {
+    padding-top: 0vh;
+    width: 100%;
+  }
+
+  .homeContainer {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .homeContainer .logo img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .homeContent {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .questionSection {
+    display: none;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: pink;
+  }
+
+  .topicList ul {
+    background-color: red;
+    display: none;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .topicList {
+    display: none;
+  }
+
+
+  /*  */
+  .contentSection {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  iframe {
+    height: 60vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 200;
+  }
+
+  .navbarHeader {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 0 1rem; */
+    bottom: 0;
+    background: rgb(20, 38, 57);
+    height: 50vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: none;
+  }
+
+
+  .navbarHeader .navList,
+  .extraNavList {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .navbarHeader a:hover {
+    color: hotpink
+  }
+
+  .allTopics {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .navLogo {
+    display: flex;
+    gap: 0 1rem;
+  }
+
+  .navHead {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 5vh;
+    align-items: center;
+    position: fixed;
+    background: #000;
+  }
+
+  .navHead .leftHam,
+  .rightHam {
+    display: flex;
+    gap: 0 1rem;
+  }
+  i
+  {
+    font-size: 2rem;
+  }
 }

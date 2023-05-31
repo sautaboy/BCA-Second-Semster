@@ -17,6 +17,7 @@ export default function ThirdSemister() {
 
         navListFive="Web Technology" navListFiveHref="webTechnology"
       />
+      
       <JavaNav />
     </div>
   )
