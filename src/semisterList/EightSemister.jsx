@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
-import WebTechnologyNav from '../navbarComponents/WebTechnologyNav'
-import JavaNav from '../navbarComponents/JavaNav'
+import Pending from '../extraComponents/Pending'
 
 
 export default function EightSemister() {
@@ -11,6 +10,7 @@ export default function EightSemister() {
                 navListOne="Operation Search"
                 navListOneHref="operationSearch"
             />
+            <Pending/>
         </div>
     )
 }

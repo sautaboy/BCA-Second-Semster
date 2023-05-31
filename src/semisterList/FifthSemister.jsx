@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
 import WebTechnologyNav from '../navbarComponents/WebTechnologyNav'
 import JavaNav from '../navbarComponents/JavaNav'
+import Pending from '../extraComponents/Pending'
 
 export default function FifthSemister() {
     return (
@@ -18,6 +19,7 @@ export default function FifthSemister() {
                 navListFive="Computer Graphic And Animation" navListFiveHref="computerGraphicAndAnimation"
 
             />
+            <Pending/>
         </div>
     )
 }

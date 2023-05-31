@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
+import Pending from '../extraComponents/Pending'
 
-import JavaNav from '../navbarComponents/JavaNav'
 
 export default function SeventhSemister() {
     return (
@@ -12,7 +12,7 @@ export default function SeventhSemister() {
 
                 navListTwo=" Cloud Computing" navListTwoHref=" loudComputing"
             />
-
+<Pending/>
 
         </div>
     )

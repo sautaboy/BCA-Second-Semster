@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
 import JavaNav from '../navbarComponents/JavaNav'
+import Pending from '../extraComponents/Pending'
 
 
 export default function FirstSemister() {
@@ -20,7 +21,7 @@ export default function FirstSemister() {
 
 
       />
-
+      <Pending/>
 
     </div>
   )

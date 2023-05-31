@@ -1,12 +1,14 @@
 import React from 'react'
 import './App.css'
-import Navbar from './navbarComponents/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import JavaNav from './navbarComponents/JavaNav'
 import DsaNav from './navbarComponents/DsaNav'
 import WebTechnologyNav from './navbarComponents/WebTechnologyNav'
 import SadNav from './navbarComponents/SadNav'
 
+
+
+// Home component
 
 
 
@@ -21,6 +23,8 @@ import SeventhSemister from './semisterList/SeventhSemister'
 import EightSemister from './semisterList/EightSemister'
 import Home2 from './contentComponents/homeContent/Home2'
 import ProbilityAndStatics from './navbarComponents/ProbilityAndStatics'
+import WhyBca from './contentComponents/homeContent/WhyBca'
+import ErrorPage from './extraComponents/ErrorPage'
 
 
 
@@ -36,6 +40,7 @@ export default function App() {
           <Route path='/dsa' element={<DsaNav />} />
           <Route path='/webTechnology' element={<WebTechnologyNav />} />
           <Route path='/sad' element={<SadNav />} />
+          <Route path='*' element={<ErrorPage />} />
 
           {/* Semister List */}
           <Route path='/firstSemister' element={<FirstSemister />} />
@@ -57,7 +62,7 @@ export default function App() {
 
 
 
-
+          <Route path='/whyBca' element={<WhyBca />} />
         </Routes>
       </BrowserRouter>
     </div >

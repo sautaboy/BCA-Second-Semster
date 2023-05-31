@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
 import JavaNav from '../navbarComponents/JavaNav'
+import Pending from '../extraComponents/Pending'
 
 export default function FourthSemister() {
   return (
@@ -18,7 +19,7 @@ export default function FourthSemister() {
         navListFive="Database Management System" navListFiveHref="databaseManagementSystem"
 
       />
-
+<Pending/>
     </div>
   )
 }

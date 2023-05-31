@@ -15,7 +15,6 @@ export default function SubNavbar(props) {
                     <a href={"#" + props.title8Href}>{props.title8}</a>
                     <a href={"#" + props.title9Href}>{props.title9}</a>
                     <a href={"#" + props.title10Href}>{props.title10}</a>
-
                 </div>
             </div>
         </div>

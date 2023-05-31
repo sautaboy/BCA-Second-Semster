@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbarComponents/Navbar'
 import JavaNav from '../navbarComponents/JavaNav'
+import Pending from '../extraComponents/Pending'
 
 export default function SecondSemister() {
   return (
@@ -18,7 +19,7 @@ export default function SecondSemister() {
         navListFive="Microprocessor and Computer Architecture" navListFiveHref="microprocessorAndComputerArchitecture"
 
       />
-      {/* <JavaNav /> */}
+<Pending/>
 
     </div>
   )
