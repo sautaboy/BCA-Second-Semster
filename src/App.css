@@ -370,7 +370,8 @@ th {
 
 
 /* font awosome */
-.navHead {
+.navHead,
+.desktopSemister {
   display: none;
 
 }
@@ -422,7 +423,14 @@ th {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: pink;
+  }
+
+  .questionSection ul {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .topicList ul {
@@ -460,14 +468,14 @@ th {
   .navbarHeader {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     /* padding: 0 1rem; */
     bottom: 0;
     background: rgb(20, 38, 57);
-    height: 50vh;
+    height: 95vh;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    /* z-index: 999; */
     border-bottom: none;
   }
 
@@ -509,8 +517,8 @@ th {
     display: flex;
     gap: 0 1rem;
   }
-  i
-  {
+
+  i {
     font-size: 2rem;
   }
 }
